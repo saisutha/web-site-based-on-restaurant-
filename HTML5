@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Saffron Table — a modern, warm restaurant serving wood-fired pizza, craft burgers, fragrant biryani, fresh pasta, toasted sandwiches and homemade desserts. Responsive HTML5 and CSS3 website.">
+  <title>Saffron Table | Modern Kitchen &amp; Dining</title>
+
+  <!-- Google Fonts: Playfair Display for headings, DM Sans for clean readable body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,500&amp;display=swap" rel="stylesheet">
+
+  <!-- External CSS file linked to HTML (keeps HTML and CSS separate) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Skip link for keyboard accessibility -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- =========================================================
+       A. NAVIGATION BAR (Logo, Links, Pure CSS Mobile Toggle)
+       ========================================================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Restaurant Logo and Name -->
+      <a class="brand" href="#home" aria-label="Saffron Table Home">
+        <span class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 36 36" focusable="false">
+            <circle cx="18" cy="18" r="16" fill="none" stroke="currentColor" stroke-width="1.5"></circle>
+            <path d="M12.5 10.5v6.2a2.6 2.6 0 0 0 2.6 2.6v6.2M15.1 10.5v5.8M12.5 10.5v5.8M17.7 10.5v6.2a2.6 2.6 0 0 1-2.6 2.6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            <path d="M23 10.5c1.8 0 2.6 2.4 2.6 5.2 0 1.9-.9 3.1-2.6 3.5v6.3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">Saffron Table</span>
+          <span class="brand-sub">Kitchen &amp; Dining</span>
+        </span>
+      </a>
+
+      <!-- Pure CSS Mobile Menu Toggle (No JavaScript required) -->
+      <input class="menu-toggle" type="checkbox" id="menu-toggle" aria-label="Open navigation menu">
+      <label class="menu-toggle-label" for="menu-toggle">
+        <span class="sr-only">Toggle navigation menu</span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </label>
+
+      <!-- Main Navigation Links -->
+      <nav class="main-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#offers">Offers</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a class="nav-contact-btn" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- =========================================================
+         B. HERO SECTION (Background Image, Tagline, Explore CTA)
+         ========================================================= -->
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+      <div class="container hero-content">
+        <p class="hero-eyebrow">Est. 2014 &middot; Fresh Kitchen &amp; Dining</p>
+        <h1 id="hero-heading">Saffron Table</h1>
+        <p class="hero-tagline">Fresh Flavours, <em>Crafted with Heart</em></p>
+        <p class="hero-description">
+          From crisp wood-fired pizzas and slow-cooked dum biryani to handmade pasta
+          and warm desserts &mdash; enjoy honest cooking, seasonal ingredients, and
+          welcoming hospitality around every table.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#menu">Explore Our Menu</a>
+          <a class="btn btn-outline-light" href="#offers">Special Offers</a>
+        </div>
+
+        <!-- Compact dining details ribbon -->
+        <div class="hero-info">
+          <div class="hero-info-item">
+            <span class="hero-info-label">Open Daily</span>
+            <span class="hero-info-value">11:00 AM &ndash; 11:00 PM</span>
+          </div>
+          <div class="hero-info-item">
+            <span class="hero-info-label">Location</span>
+            <span class="hero-info-value">Indiranagar, Bengaluru</span>
+          </div>
+          <div class="hero-info-item">
+            <span class="hero-info-label">Table Enquiries</span>
+            <span class="hero-info-value">+91 80 4120 8899</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         C. ABOUT US SECTION (Two-Column Story & Interior Image)
+         ========================================================= -->
+    <section class="section about-section" id="about" aria-labelledby="about-heading">
+      <div class="container about-grid">
+        <!-- Left Column: Restaurant Image -->
+        <div class="about-image-wrap">
+          <img src="https://images.pexels.com/photos/31970866/pexels-photo-31970866.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+               alt="Warm modern dining room inside Saffron Table with wooden tables and pendant lights"
+               width="1200" height="627" loading="lazy">
+          <div class="about-badge">
+            <strong>10+</strong>
+            <span>Years Serving<br>Good Food</span>
+          </div>
+        </div>
+
+        <!-- Right Column: Story & Highlights -->
+        <div class="about-content">
+          <p class="section-label">About Us</p>
+          <h2 id="about-heading">Good food brings people <em>closer together</em></h2>
+          <p class="about-lead">
+            Saffron Table began as a cosy neighbourhood kitchen built on a simple
+            promise: cook everything fresh from scratch and serve every guest like family.
+          </p>
+          <p class="about-text">
+            Every morning, our chefs hand-select local vegetables, aromatic whole spices,
+            farmhouse cheeses, and stone-milled flour. Whether you stop by for a quick
+            toasted sandwich, share a crisp pizza with friends, or gather for a hearty
+            Sunday biryani, we focus on balanced flavours, generous portions, and warm,
+            attentive service from the moment you walk in.
+          </p>
+
+          <!-- Three core dining standards -->
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <h3>Fresh Ingredients</h3>
+              <p>Sourced daily from trusted local markets and farms.</p>
+            </div>
+            <div class="highlight-item">
+              <h3>Crafted Kitchen</h3>
+              <p>Prepared to order with authentic, balanced recipes.</p>
+            </div>
+            <div class="highlight-item">
+              <h3>Warm Service</h3>
+              <p>Welcoming staff and a calm, comfortable dining space.</p>
+            </div>
+          </div>
+
+          <a class="btn btn-secondary" href="#menu">View Signature Dishes</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         D. OUR MENU SECTION (6 Dish Cards in Responsive Grid)
+         ========================================================= -->
+    <section class="section menu-section" id="menu" aria-labelledby="menu-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Our Menu</p>
+          <h2 id="menu-heading">Crafted Fresh, <em>Served Warm</em></h2>
+          <p class="section-subtitle">
+            Explore our six most-loved dishes, freshly cooked to order throughout the day.
+          </p>
+        </div>
+
+        <div class="menu-grid">
+
+          <!-- Menu Card 1: Pizza -->
+          <article class="menu-card">
+            <div class="menu-card-image">
+              <img src="https://images.pexels.com/photos/17932142/pexels-photo-17932142.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+                   alt="Fresh wood-fired Margherita pizza topped with cherry tomatoes, mozzarella, and basil leaves"
+                   width="1200" height="627" loading="lazy">
+              <span class="menu-tag">Wood-Fired</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Pizza</h3>
+                <span class="menu-price">&#8377;349</span>
+              </div>
+              <p class="menu-card-desc">
+                Hand-stretched Margherita crust baked crisp with crushed tomatoes,
+                melted fresh mozzarella, fragrant sweet basil, and extra-virgin olive oil.
+              </p>
+              <div class="menu-card-meta">
+                <span>10-inch Regular</span>
+                <span>Vegetarian</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Menu Card 2: Burger -->
+          <article class="menu-card">
+            <div class="menu-card-image">
+              <img src="https://images.pexels.com/photos/29250659/pexels-photo-29250659.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+                   alt="Gourmet burger layered with rich melted cheddar cheese in a soft toasted bun"
+                   width="1200" height="627" loading="lazy">
+              <span class="menu-tag">Best Seller</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Burger</h3>
+                <span class="menu-price">&#8377;249</span>
+              </div>
+              <p class="menu-card-desc">
+                Flame-grilled patty stacked with aged cheddar cheese, caramelised onions,
+                crisp lettuce, and smoky house glaze on a toasted butter brioche bun.
+              </p>
+              <div class="menu-card-meta">
+                <span>With Seasoned Fries</span>
+                <span>Veg / Classic</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Menu Card 3: Biryani -->
+          <article class="menu-card">
+            <div class="menu-card-image">
+              <img src="https://images.pexels.com/photos/28674660/pexels-photo-28674660.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+                   alt="Aromatic Indian dum biryani served with rich spiced gravy and crisp garnishes"
+                   width="1200" height="627" loading="lazy">
+              <span class="menu-tag">House Special</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Biryani</h3>
+                <span class="menu-price">&#8377;329</span>
+              </div>
+              <p class="menu-card-desc">
+                Fragrant long-grain basmati rice slow-cooked on dum with saffron,
+                whole coastal spices, mint, fried onions, cool cucumber raita, and mirchi salan.
+              </p>
+              <div class="menu-card-meta">
+                <span>Serves 1&ndash;2</span>
+                <span>Veg / Chicken</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Menu Card 4: Pasta -->
+          <article class="menu-card">
+            <div class="menu-card-image">
+              <img src="https://images.pexels.com/photos/12653291/pexels-photo-12653291.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+                   alt="Classic pasta tossed in tangy red tomato sauce with grated parmesan and fresh basil"
+                   width="1200" height="627" loading="lazy">
+              <span class="menu-tag">Chef&rsquo;s Pick</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Pasta</h3>
+                <span class="menu-price">&#8377;299</span>
+              </div>
+              <p class="menu-card-desc">
+                Al dente pasta tossed in slow-simmered roasted garlic tomato sauce with
+                chilli flakes, fresh garden basil, aged parmesan, and warm garlic bread.
+              </p>
+              <div class="menu-card-meta">
+                <span>Choice of Sauce</span>
+                <span>Vegetarian</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Menu Card 5: Sandwich -->
+          <article class="menu-card">
+            <div class="menu-card-image">
+              <img src="https://images.pexels.com/photos/8478417/pexels-photo-8478417.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+                   alt="Golden grilled club sandwich stacked with garden-fresh greens and held with skewers"
+                   width="1200" height="627" loading="lazy">
+              <span class="menu-tag">Cafe Classic</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Sandwich</h3>
+                <span class="menu-price">&#8377;199</span>
+              </div>
+              <p class="menu-card-desc">
+                Triple-layer grilled club sandwich built on crisp multigrain bread with
+                herbed cottage cheese, ripe tomatoes, crunchy greens, and mint pesto dressing.
+              </p>
+              <div class="menu-card-meta">
+                <span>Served with Dip</span>
+                <span>Light Bite</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Menu Card 6: Desserts -->
+          <article class="menu-card">
+            <div class="menu-card-image">
+              <img src="https://images.pexels.com/photos/26838689/pexels-photo-26838689.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+                   alt="Velvety slice of homemade tiramisu dusted with cocoa and fresh mint leaf garnish"
+                   width="1200" height="627" loading="lazy">
+              <span class="menu-tag">Sweet Craft</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Desserts</h3>
+                <span class="menu-price">&#8377;219</span>
+              </div>
+              <p class="menu-card-desc">
+                Silky classic tiramisu layered with espresso-soaked sponge, whipped
+                mascarpone cream, dark cocoa dusting, and a fresh sprig of garden mint.
+              </p>
+              <div class="menu-card-meta">
+                <span>Freshly Chilled</span>
+                <span>Eggless Option</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         E. SPECIAL OFFERS SECTION (Featured Banner & Deal Cards)
+         ========================================================= -->
+    <section class="section offers-section" id="offers" aria-labelledby="offers-heading">
+      <div class="container">
+        <div class="section-header section-header-light">
+          <p class="section-label section-label-light">Special Offers</p>
+          <h2 id="offers-heading">Seasonal Combos &amp; <em>Chef&rsquo;s Deals</em></h2>
+          <p class="section-subtitle">
+            Thoughtfully curated meal bundles so you can share more favourites for less.
+          </p>
+        </div>
+
+        <!-- Featured Promotional Banner -->
+        <article class="offer-banner">
+          <div class="offer-banner-content">
+            <span class="offer-pill">Featured Offer &middot; Fri to Sun</span>
+            <h3>Weekend Family Feast &mdash; Flat 20% Off</h3>
+            <p>
+              Gather around with any two wood-fired pizzas, one family-size dum biryani,
+              fresh side salads, and four house desserts at an exclusive weekend table discount.
+            </p>
+            <p class="offer-validity">Valid on dine-in orders above &#8377;1,299 &middot; Show offer at your table</p>
+          </div>
+          <div class="offer-banner-highlight">
+            <span class="offer-big">20%</span>
+            <span class="offer-big-label">OFF</span>
+            <a class="btn btn-gold" href="#contact">Reserve for Weekend</a>
+          </div>
+        </article>
+
+        <!-- Three Supporting Deal Cards -->
+        <div class="offers-grid">
+          <article class="offer-card">
+            <span class="offer-badge">Mon &ndash; Fri</span>
+            <h3>Weekday Lunch Combo</h3>
+            <p class="offer-price-tag">Only &#8377;399</p>
+            <p class="offer-desc">
+              Pick one pasta or burger, pair it with a toasted garlic side and a chilled
+              seasonal citrus mocktail between 12:00 PM and 3:30 PM.
+            </p>
+          </article>
+
+          <article class="offer-card offer-card-accent">
+            <span class="offer-badge">Wednesdays</span>
+            <h3>Stone-Oven Pizza Treat</h3>
+            <p class="offer-price-tag">50% Off 2nd Pizza</p>
+            <p class="offer-desc">
+              Order any signature hand-stretched pizza and enjoy a second freshly baked
+              pizza of equal or lesser value at half price all Wednesday long.
+            </p>
+          </article>
+
+          <article class="offer-card">
+            <span class="offer-badge">Evenings</span>
+            <h3>Sweet Finale Delight</h3>
+            <p class="offer-price-tag">Complimentary</p>
+            <p class="offer-desc">
+              Enjoy a complimentary slice of homemade tiramisu on every table bill of
+              &#8377;999 or more when dining in after 7:00 PM.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         F. GALLERY SECTION (Responsive Food & Ambiance Grid)
+         ========================================================= -->
+    <section class="section gallery-section" id="gallery" aria-labelledby="gallery-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Gallery</p>
+          <h2 id="gallery-heading">Inside <em>Saffron Table</em></h2>
+          <p class="section-subtitle">
+            A glimpse of our sunlit dining space, evening ambience, and freshly plated meals.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img src="https://images.pexels.com/photos/34252330/pexels-photo-34252330.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+                 alt="Spacious wooden dining tables neatly arranged inside our main dining hall"
+                 width="1200" height="627" loading="lazy">
+            <figcaption>Warm Main Dining Hall</figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="https://images.pexels.com/photos/36430149/pexels-photo-36430149.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+                 alt="Chef carefully garnishing a freshly prepared dish with signature sauce"
+                 width="1200" height="627" loading="lazy">
+            <figcaption>Crafted in Our Kitchen</figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="https://images.pexels.com/photos/21792440/pexels-photo-21792440.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+                 alt="Two artisan hand-stretched gourmet pizzas arranged on a wood restaurant table"
+                 width="1200" height="627" loading="lazy">
+            <figcaption>Wood-Fired Artisan Pizzas</figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="https://images.pexels.com/photos/7372262/pexels-photo-7372262.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+                 alt="Two chilled house citrus mocktails garnished with fresh grapefruit slices"
+                 width="1200" height="627" loading="lazy">
+            <figcaption>Handcrafted Mocktails</figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="https://images.pexels.com/photos/28059309/pexels-photo-28059309.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+                 alt="Candlelit dinner table set with crystal glasses under warm chandelier light"
+                 width="1200" height="627" loading="lazy">
+            <figcaption>Evening Candlelit Dining</figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="https://images.pexels.com/photos/29578911/pexels-photo-29578911.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+                 alt="Shared spread of warm artisan bread, fresh cheese, herbs, and seasonal starters"
+                 width="1200" height="627" loading="lazy">
+            <figcaption>Seasonal Sharing Plates</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         G. CONTACT SECTION (Details, Hours & Contact Form)
+         ========================================================= -->
+    <section class="section contact-section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Contact Us</p>
+          <h2 id="contact-heading">Visit Us or <em>Say Hello</em></h2>
+          <p class="section-subtitle">
+            Planning a dinner, birthday gathering, or have a menu question? Reach out any time.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Column: Restaurant Information -->
+          <div class="contact-info">
+            <article class="info-card">
+              <span class="info-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
+              </span>
+              <div>
+                <h3>Address</h3>
+                <address>
+                  42, 12th Main Road, HAL 2nd Stage<br>
+                  Indiranagar, Bengaluru 560038
+                </address>
+              </div>
+            </article>
+
+            <article class="info-card">
+              <span class="info-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false"><path d="M5 4h3l2 5-2 1a12 12 0 0 0 6 6l1-2 5 2v3a2 2 0 0 1-2 2A18 18 0 0 1 3 6a2 2 0 0 1 2-2Z"></path></svg>
+              </span>
+              <div>
+                <h3>Phone</h3>
+                <p><a href="tel:+918041208899">+91 80 4120 8899</a></p>
+                <p class="info-note">For table enquiries &amp; takeaways</p>
+              </div>
+            </article>
+
+            <article class="info-card">
+              <span class="info-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>
+              </span>
+              <div>
+                <h3>Email</h3>
+                <p><a href="mailto:hello@saffrontable.example">hello@saffrontable.example</a></p>
+                <p class="info-note">We usually reply within one business day</p>
+              </div>
+            </article>
+
+            <article class="info-card">
+              <span class="info-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>
+              </span>
+              <div class="hours-wrap">
+                <h3>Opening Hours</h3>
+                <ul class="hours-list">
+                  <li><span>Monday &ndash; Friday</span><span>11:00 AM &ndash; 10:30 PM</span></li>
+                  <li><span>Saturday &ndash; Sunday</span><span>11:00 AM &ndash; 11:30 PM</span></li>
+                  <li><span>Lunch Combos</span><span>12:00 PM &ndash; 3:30 PM</span></li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <!-- Right Column: Contact Form -->
+          <div class="contact-form-card">
+            <h3>Send Us a Message</h3>
+            <p class="form-intro">Share feedback, group enquiries, or special dietary requests below.</p>
+
+            <form class="contact-form" action="#contact" method="get">
+              <div class="form-group">
+                <label for="customer-name">Your Name</label>
+                <input type="text" id="customer-name" name="name" placeholder="Enter your full name" autocomplete="name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="customer-email">Email Address</label>
+                <input type="email" id="customer-email" name="email" placeholder="you@example.com" autocomplete="email" required>
+              </div>
+
+              <div class="form-group">
+                <label for="customer-message">Message</label>
+                <textarea id="customer-message" name="message" rows="5" placeholder="Write your message, question, or seating preference..." required></textarea>
+              </div>
+
+              <button class="btn btn-primary btn-full" type="submit">Send Message</button>
+
+              <p class="form-disclaimer">
+                Note: This is a static HTML &amp; CSS student project form. Fields use
+                built-in browser validation; submitting does not send a real email.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       H. FOOTER (Brand, Quick Links, Social Icons, Copyright)
+       ========================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <!-- Restaurant Name and Short Description -->
+      <div class="footer-about">
+        <a class="brand brand-light" href="#home">
+          <span class="brand-name">Saffron Table</span>
+          <span class="brand-sub">Kitchen &amp; Dining</span>
+        </a>
+        <p>
+          A welcoming dining room celebrating fresh ingredients, hand-stretched pizzas,
+          aromatic biryani, handmade pasta, and desserts baked in-house daily.
+        </p>
+      </div>
+
+      <!-- Quick Navigation Links -->
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#menu">Our Menu</a></li>
+          <li><a href="#offers">Special Offers</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media Links -->
+      <div class="footer-social">
+        <h3>Connect With Us</h3>
+        <p class="footer-social-text">Follow our kitchen specials and weekend dishes.</p>
+        <div class="social-list">
+          <a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Saffron Table on Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.2" cy="6.8" r="1"></circle></svg>
+          </a>
+          <a class="social-link" href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Saffron Table on Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 3h-2.5A4.5 4.5 0 0 0 8 7.5V10H5v4h3v7h4v-7h3l1-4h-4V7.8c0-.5.4-.8.9-.8H15V3Z"></path></svg>
+          </a>
+          <a class="social-link" href="https://x.com/" target="_blank" rel="noopener" aria-label="Saffron Table on X">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 4l16 16M20 4L4 20"></path></svg>
+          </a>
+          <a class="social-link" href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Saffron Table on YouTube">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2.5" y="5.5" width="19" height="13" rx="3.5"></rect><path d="M10 9.5l5 2.5-5 2.5v-5Z"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Copyright Strip -->
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Saffron Table Restaurant. All rights reserved.</p>
+      <p class="footer-credit">Built with HTML5 &amp; CSS3 only &middot; Responsive Web Design Demo</p>
+    </div>
+  </footer>
+
+</body>
+</html>
